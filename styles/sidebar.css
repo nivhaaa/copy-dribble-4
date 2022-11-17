@@ -1,0 +1,255 @@
+.sidebar {
+    background: rgb(18, 17, 19);
+    height: 100%;
+    width: 14.5%;
+    position: fixed;
+}
+
+/* top sidebar */
+
+.top-sidebar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 12.5%;
+    position: relative;
+}
+
+.top-sidebar:after {
+    background: white;
+    bottom: 0;
+    content: "";
+    height: 2%;
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
+}
+
+.letter-n-icon {
+    cursor: pointer;
+    height: 35%;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.letter-n-icon:hover {
+    height: 50%;
+    opacity: 0.8;
+}
+
+.letter-n-icon:active {
+    height: 50%;
+    opacity: 0.6;
+}
+
+.top-sidebar:before {
+    animation: fallin-top 3s infinite ease-in-out;
+    background: white;
+    border-radius: 50%;
+    content: "";
+    height: 8%;
+    right: 2%;
+    position: absolute;
+    width: 4%;
+}
+
+@keyframes fallin-top {
+    from {
+        transform: translateY(-10vh);
+    } to {
+        transform: translateY(5.6vh);
+    }
+}
+
+/* middle sidebar */
+
+.middle-sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    position: relative;
+}
+
+.middle-sidebar .box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    margin-top: 15%;
+    justify-content: start;    
+}
+
+.middle-sidebar .icon-txt-box {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 9%;
+    margin-left: 15%;
+    justify-content: start;    
+    position: relative;
+    width: 70%;
+    white-space: nowrap;
+}
+
+        /* setting width */
+
+.middle-sidebar .overview,
+.middle-sidebar .analytics,
+.middle-sidebar .payment,
+.middle-sidebar .txt-box {
+    width: 60%;
+}
+
+.middle-sidebar .transaction {
+    width: 70%; 
+}
+
+.middle-sidebar .card {
+    width: 45%; 
+}
+
+.middle-sidebar .exchange {
+    transition: all 0.3s ease-in-out;
+    width: 95%; 
+}
+
+.middle-sidebar .settings {
+    width: 55%; 
+}
+
+.middle-sidebar .manage-card {
+    width: 75%; 
+}
+
+.middle-sidebar .call {
+    width: 65%; 
+}
+        /* end */
+
+.middle-sidebar .icon {
+    height: 45%;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.middle-sidebar .icon-txt-box:hover .icon {
+    height: 60%;
+}
+
+.middle-sidebar .exchange:hover {
+    margin-left: 5%;
+}
+
+.middle-sidebar .icon-txt-box:hover .icon-text {
+    font-size: 22px;
+}
+
+.middle-sidebar .icon-text {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.middle-sidebar .icon-txt-box:hover {
+    opacity: 0.7;
+}
+
+.middle-sidebar .icon-text:hover {
+    opacity: 0.7;
+}
+
+
+.middle-sidebar .txt-box {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    margin-left: 10%;    
+    justify-content: center;
+    white-space: nowrap;
+}
+
+
+.middle-sidebar .txt-box .icon-text {
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+/* bottom sidebar */
+
+.bottom-sidebar {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 7.5%;
+    justify-content: center;
+    position: relative;
+}
+
+.bottom-sidebar:after {
+    background-color: white;
+    content: "";
+    height: 5%;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.bottom-sidebar:before {
+    animation: fallin-bottom 3s infinite ease-in-out;
+    background-color: white;
+    border-radius: 50%;
+    content: "";
+    height: 9%;
+    left: 2%;
+    position: absolute;
+    top: 10px;
+    width: 3.5%;
+}
+
+
+@keyframes fallin-bottom {
+    from {
+        transform: translateY(9vh);
+    } to {
+        transform: translateY(0vh);
+    }
+}
+
+.bottom-sidebar .logout-box {
+    align-items: center;
+    display: flex;
+    height: 50%;
+    width: 60%;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+}
+.bottom-sidebar .logout-box:hover {
+    opacity: 0.7;
+}
+
+.bottom-sidebar .logout-box:hover .exit-icon {
+    height: 75%;
+}
+
+.bottom-sidebar .logout-box:hover .exit-txt {
+    font-size: 22px;
+}
+
+.bottom-sidebar .exit-icon {
+    height: 55%;
+    margin-right: 5%;
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-sidebar .exit-txt {
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+}
